@@ -4,5 +4,5 @@ Serão abordadas tecnologias fundamentais para desenvolvimento de sistemas web, 
 
 Será utilizado também o framework Bootstrap 4, um dos mais famosos e utilizados no mundo para criar componentes visuais incríveis e tornar nosso site responsivo, ou seja, com um layout adaptável para qualquer tipo de tela, oferecendo uma experiência agradável para os usuários, estejam eles acessando via computador, tablet, celular.
 
-1.[Slides](https://github.com/dobbinx3/maua/tree/master/pae/desenvolvimento_de_sites_responsivos_e_modernos/apresentacoes)
-2.[Código das aulas](https://github.com/dobbinx3/maua/tree/master/pae/desenvolvimento_de_sites_responsivos_e_modernos/exemplos)
+1. [Slides](https://github.com/dobbinx3/maua/tree/master/pae/desenvolvimento_de_sites_responsivos_e_modernos/apresentacoes)
+2. [Código das aulas](https://github.com/dobbinx3/maua/tree/master/pae/desenvolvimento_de_sites_responsivos_e_modernos/exemplos)
