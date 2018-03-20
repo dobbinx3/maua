@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Aula 2 - HTML</title>
+  </head>
+  <body>
+    <h1>Modo 'Antigo'</h1>
+
+    <div class="header">
+      <ul class="navigation">
+        <li><a href="#">Menu a</a></li>
+        <li><a href="#">Menu b</a></li>
+        <li><a href="#">Menu c</a></li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <div class="sidebar">
+        <p>
+          Lorem ipsum dolor sit amet, 
+          consectetur adipisicing elit. 
+          Modi ea rem esse voluptas non, 
+          velit perspiciatis rerum dicta dolorem! 
+          Delectus unde saepe id nemo tempora 
+          iure quis aspernatur ut sapiente?
+        </p>
+      </div>
+
+      <div class="content">
+        <h1>Titulo</h1>
+        <p>texto</p>
+        <p>texto</p>
+        <p>texto</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <ul>
+        <li><a href="#">link de rodapé 1</a></li>
+        <li><a href="#">link de rodapé 2</a></li>
+        <li><a href="#">link de rodapé 3</a></li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <h1>Modo 'Novo'</h1>
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Menu a</a></li>
+          <li><a href="#">Menu b</a></li>
+          <li><a href="#">Menu c</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <aside>
+        <p>
+          Lorem ipsum dolor sit amet, 
+          consectetur adipisicing elit. 
+          Modi ea rem esse voluptas non, 
+          velit perspiciatis rerum dicta dolorem! 
+          Delectus unde saepe id nemo tempora 
+          iure quis aspernatur ut sapiente?
+        </p>
+      </aside>
+
+      <article>
+        <h1>Título</h1>
+        <p>texto</p>
+        <p>texto</p>
+        <p>texto</p>
+      </article>
+    </main>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="#">link de rodapé 1</a></li>
+          <li><a href="#">link de rodapé 2</a></li>
+          <li><a href="#">link de rodapé 3</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+    <hr>
+
+    <h1>Atributos</h1>
+
+    <img src="http://placehold.it/300x300" alt="Texto alternativo para Imagem"><br><br>
+
+    <img src="http://placeasdhold.it/300x300" alt="Texto alternativo para Imagem"><br><br>
+    
+    <a href="#" title="Link">Link para algum lugar</a>
+
+    <h2 class="titulo">Título com class</h2>
+
+    <h2 id="titulo">Título com Id</h2>
+
+    <div data-teste="green" id="minhaDiv">
+      <p>Div com data-attributes</p>
+    </div>
+
+    <script>
+      document.getElementById('minhaDiv').addEventListener('click', function () {
+        console.log(this.dataset);
+        this.style.background = this.dataset.teste;  
+      });
+    </script>
+  </body>
+</html>
