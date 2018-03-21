@@ -1,0 +1,51 @@
+body {
+  background: #eee;
+}
+
+p {
+  color: blue;
+}
+
+a {
+  color: black;
+}
+
+ul li a {
+  color: red;
+}
+
+
+/* Seletores */
+
+body h4 {
+  color: red;
+}
+
+body > h4 {
+  font-size: 40px;
+}
+
+ul li a + span {
+  display: block;
+  font-size: 30px;
+}
+
+body p.texto {
+  color: black;
+}
+
+body p#texto {
+  color: blue;
+}
+
+div[data-teste] {
+  background-color: red;
+}
+
+div[data-teste="green"] {
+  background-color: green;
+}
+
+a:hover {
+  color: red;
+}

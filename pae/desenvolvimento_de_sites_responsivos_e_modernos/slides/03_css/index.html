@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Aula 3 - CSS</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    
+    <style>
+      .reveal pre {
+        box-shadow: none;
+      }
+    </style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<!-- Slide 1 -->
+				<section>
+          <img src="./maua_logo.png" alt="Mauá Logo" style="border: 0; box-shadow: none; margin-top: -200px; margin-bottom: 200px" width="200px">
+					<h3>Desenvolvimento de sites responsivos e modernos</h3>
+          <p>CSS</p>
+        </section>
+        <!-- Slide 1 End -->
+
+        <!-- Slide 2 Start -->
+        <section>
+          <h5>CSS</h5>
+          <p class="fragment fade-in">Cascading Style Sheets</p>
+
+          <aside class="notes">
+            <ul>
+              <li>Link para consulta Herança -> <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Cascading_and_inheritance">https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Cascading_and_inheritance</a></li>
+              <li>Link para consulta Seletores -> <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Seletores">https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Seletores</a></li>
+            </ul>
+          </aside>
+        </section>
+        <!-- Slide 2 End -->
+
+        <!-- Slide 3 Start -->
+        <section>
+          <h5>Cascata e Herança</h5>
+
+          <pre class="fragment fade-up">
+            <code data-trim class="css">
+              body {
+                background: red;
+              }
+
+              p {
+                color: blue;
+              }
+
+              a {
+                font-size: 18px;
+              }
+
+              ul li a {
+                font-size: 12px;
+              }
+            </code>
+          </pre>
+        </section>
+        <!-- Slide 3 End -->
+
+        <!-- Slide 4 Start -->
+        <section>
+          <h5>Seletores</h5>
+
+          <pre class="fragment fade-up">
+            <code data-trim class="css">
+              body p {
+                color: red;
+              }
+
+              body p.texto {
+                color: black;
+              }
+
+              body p#texto {
+                color: black;
+              }
+
+              div[data-teste="green"] {
+                background-color: green;
+              }
+
+              a:hover {
+                color: red;
+              }
+            </code>
+          </pre>
+        </section>
+        <!-- Slide 4 End -->
+
+        <!-- Slide 5 Start -->
+        <section>
+          <h3>Perguntas?</h3>
+        </section>
+        <!-- Slide 5 End -->
+
+        <!-- Slide 6 Start -->
+        <section>
+          <h3>Atividade</h3>
+          <p>- Implementar CSS no seu HTML</p>
+          <p>NORMALIZE</p>
+        </section>
+        <!-- Slide 6 End -->
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
