@@ -2,6 +2,10 @@ body {
   background: #eee;
 }
 
+/* body p {
+  color: red;
+} */
+
 p {
   color: blue;
 }
@@ -14,7 +18,6 @@ ul li a {
   color: red;
 }
 
-
 /* Seletores */
 
 body h4 {
@@ -22,7 +25,7 @@ body h4 {
 }
 
 body > h4 {
-  font-size: 40px;
+  font-size: 50px;
 }
 
 ul li a + span {
@@ -30,13 +33,17 @@ ul li a + span {
   font-size: 30px;
 }
 
-body p.texto {
+body #texto {
+  color: pink;
+}
+
+body .texto {
   color: black;
 }
 
-body p#texto {
-  color: blue;
-}
+/* body p.texto {
+  color: #404040;
+} */
 
 div[data-teste] {
   background-color: red;
@@ -47,5 +54,5 @@ div[data-teste="green"] {
 }
 
 a:hover {
-  color: red;
+  color: green;
 }
