@@ -43,18 +43,93 @@
         <section>
           <h5>CSS</h5>
           <p class="fragment fade-in">Cascading Style Sheets</p>
-
-          <aside class="notes">
-            <ul>
-              <li>Link para consulta Cascata e Herança -> <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Cascading_and_inheritance">https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Cascading_and_inheritance</a></li>
-              <li>Link para consulta Seletores -> <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Seletores">https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Seletores</a></li>
-              <li>Link para paleta de cores -> <a href="https://material.io/guidelines/style/color.html#color-color-palette">https://material.io/guidelines/style/color.html#color-color-palette</a></li>
-            </ul>
-          </aside>
         </section>
         <!-- Slide 2 End -->
 
         <!-- Slide 3 Start -->
+        <section>
+          <h5>Como importar no Html o CSS?</h5>
+
+          <section>
+            <h6 class="fragment fade-in">Inline</h6>
+            <p class="fragment fade-in">Dentro da própria tag HTML como atributo</p>
+
+            <pre class="fragment fade-up">
+              <code data-trim class="html">
+                <p style="color:red;">Texto de cor vermelha</p>
+
+                <div style="width:200px; height: 200px;">200x200</div>
+              </code>
+            </pre>
+
+            <h3 class="fragment fade-up">Não devemos fazer desse jeito!</h3>
+          </section>
+
+          <section>
+            <h6>Incorporadas</h6>
+            <p class="fragment fade-in">Na Seção Head do documento HTML</p>
+
+            <pre class="fragment fade-up">
+              <code data-trim class="html">
+                &lt;head&gt;
+                  <title>Exemplo de uma Vitrine</title>
+                  <meta name="author" content="Dobbinx3">
+
+                  <style rel="stylesheet" type="text/css">
+                    p {
+                      color: red;
+                    }
+                  </style>
+                &lt;/head&gt;
+              </code>
+            </pre>
+
+            <h3 class="fragment fade-up">Não devemos fazer desse jeito!</h3>
+          </section>
+
+          <section>
+            <h6>Em escopo</h6>
+            <p class="fragment fade-in">Dentro de um container de marcação HTML</p>
+
+            <pre class="fragment fade-up">
+              <code data-trim class="html">
+                <div>
+                  <p>Um texto que terá a fonte do tamanho 14px</p>
+
+                  <style rel="stylesheet" type="text/css" scoped="scoped">
+                    p {
+                      font-size: 14px;
+                    }
+                  </style>
+                </div>
+                <p>Texto que NÃO terá a fonte do tamanho 14px</p>
+              </code>
+            </pre>
+
+            <h3 class="fragment fade-up">Não devemos fazer desse jeito!</h3>
+          </section>
+
+          <section>
+            <h6>Externas</h6>
+            <p class="fragment fade-in">Quando o CSS é escrito em um arquivo separado do HTML</p>
+
+            <pre class="fragment fade-up">
+              <code data-trim class="html">
+                &lt;head&gt;
+                  <title>Exemplo de uma Vitrine</title>
+                  <meta name="author" content="Dobbinx3">
+
+                  <link rel="stylesheet" type="text/css" href="style.css">
+                &lt;/head&gt;
+              </code>
+            </pre>
+
+            <h3 class="fragment fade-up">Vamos fazer desse jeito!</h3>
+          </section>
+        </section>
+        <!-- Slide 3 End -->
+
+        <!-- Slide 4 Start -->
         <section>
           <h5>Cascata e Herança</h5>
 
@@ -78,9 +153,9 @@
             </code>
           </pre>
         </section>
-        <!-- Slide 3 End -->
+        <!-- Slide 4 End -->
 
-        <!-- Slide 4 Start -->
+        <!-- Slide 5 Start -->
         <section>
           <h5>Seletores</h5>
 
@@ -115,34 +190,41 @@
               }
             </code>
           </pre>
-
-          <aside class="notes">
-            <ul>
-              <li>Falar sobre Emmet</li>
-            </ul>
-          </aside>
-        </section>
-        <!-- Slide 4 End -->
-
-        <!-- Slide 5 Start -->
-        <section>
-          <h3>Perguntas?</h3>
         </section>
         <!-- Slide 5 End -->
 
         <!-- Slide 6 Start -->
         <section>
-          <h3>Atividade</h3>
-          <p>- Implementar CSS no seu HTML</p>
-
-          <aside class="notes">
-            <ul>
-              <li>Normalize.css -> <a href="https://necolas.github.io/normalize.css/">https://necolas.github.io/normalize.css/</a></li>
-              <li>Reset.css -> <a href="https://cssreset.com/scripts/eric-meyer-reset-css/">https://cssreset.com/scripts/eric-meyer-reset-css/</a></li>
-            </ul>
-          </aside>
+          <h3>Exemplos</h3>
         </section>
         <!-- Slide 6 End -->
+
+        <!-- Slide 7 Start -->
+        <section>
+          <h3>Perguntas?</h3>
+        </section>
+        <!-- Slide 7 End -->
+
+        <!-- Slide 8 Start -->
+        <section>
+          <h3>Referiencias</h3>
+
+          <ul>
+            <li class="fragment fade-up">Cascata e Herança -> <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Cascading_and_inheritance" target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Cascading_and_inheritance</a></li>
+            <li class="fragment fade-up">Seletores -> <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Seletores" target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Seletores</a></li>
+            <li class="fragment fade-up">Cores Material Design -> <a href="https://material.io/guidelines/style/color.html#color-color-palette" target="_blank">https://material.io/guidelines/style/color.html#color-color-palette</a></li>
+            <li class="fragment fade-up">Referiencia CSS -> <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Reference" target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/CSS/Reference</a></li>
+            <li class="fragment fade-up">Flexbox -> <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a></li>
+          </ul>
+        </section>
+        <!-- Slide 8 End -->
+
+        <!-- Slide 9 Start -->
+        <section>
+          <h3>Atividade</h3>
+          <p>- Implementar CSS no seu HTML</p>
+        </section>
+        <!-- Slide 9 End -->
 			</div>
 		</div>
 
