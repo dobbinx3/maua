@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Aula 5 - Javascript</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    
+    <style>
+      .reveal pre {
+        box-shadow: none;
+      }
+    </style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<!-- Slide 1 -->
+				<section>
+          <img src="./maua_logo.png" alt="Mauá Logo" style="border: 0; box-shadow: none; margin-top: -200px; margin-bottom: 200px" width="200px">
+					<h3>Desenvolvimento de sites responsivos e modernos</h3>
+          <p>Javascript</p>
+        </section>
+        <!-- Slide 1 End -->
+
+        <!-- Slide 2 Start -->
+        <section>
+          <h5>Javascript</h5>
+          <p class="fragment fade-in">Linguagem de programação de 'alto nível'</p>
+        </section>
+        <!-- Slide 2 End -->
+
+        <!-- Slide 2 Start -->
+        <section>
+          <h5>Principais tipos de dados e literais</h5>
+          <pre class="fragment fade-up">
+            <code data-trim class="javascript">
+              // String
+              var nome = 'Dobbin';
+
+              // Numérico
+              var idade = 28;
+
+              // Booleano
+              var isHumano = true;
+
+              // Objeto
+              var professor = {
+                nome: 'Dobbin',
+                idade: 28,
+                isHumano: true
+              };
+
+              // null -> Uma palavra-chave que indica valor nulo
+
+              // undefined -> Uma propriedade superior cujo valor é indefinido
+
+              // Array (Literal)
+              var vogais = ['a', 'e', 'i', 'o', 'u'];
+            </code>
+          </pre>
+        </section>
+        <!-- Slide 2 End -->
+
+        manipular objeto
+
+        manipular array
+
+        var, let, const, function
+
+        https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Values,_variables,_and_literals
+
+        if
+
+        switch
+
+        for
+
+        while / do while
+
+        - form validation
+
+        - swipe card
+
+        <!-- Slide 6 Start -->
+        <section>
+          <h3>Exemplos</h3>
+        </section>
+        <!-- Slide 6 End -->
+
+        <!-- Slide 7 Start -->
+        <section>
+          <h3>Perguntas?</h3>
+        </section>
+        <!-- Slide 7 End -->
+
+        <!-- Slide 8 Start -->
+        <section>
+          <h3>Referências</h3>
+
+          <ul>
+            <li class="fragment fade-up"> -> <a href="" target="_blank"></a></li>
+          </ul>
+        </section>
+        <!-- Slide 8 End -->
+
+        <!-- Slide 9 Start -->
+        <section>
+          <h3>Atividade</h3>
+          <p>- Implementar CSS no seu HTML</p>
+        </section>
+        <!-- Slide 9 End -->
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
