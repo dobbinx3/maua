@@ -6,3 +6,4 @@ Será utilizado também o framework Bootstrap 4, um dos mais famosos e utilizado
 
 1. [Slides](https://github.com/dobbinx3/maua/tree/master/pae/desenvolvimento_de_sites_responsivos_e_modernos/slides)
 2. [Código das aulas](https://github.com/dobbinx3/maua/tree/master/pae/desenvolvimento_de_sites_responsivos_e_modernos/exemplos)
+3. [Pdfs](https://github.com/dobbinx3/maua/tree/master/pae/desenvolvimento_de_sites_responsivos_e_modernos/pdfs)

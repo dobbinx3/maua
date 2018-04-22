@@ -77,7 +77,7 @@
                 <div class="front">
                   <img src="http://placehold.it/320x480&text=produto" alt="Produto">
                 </div>
-                <div class="back">
+                <div class="back pulse">
                   <h4>Titulo</h4>
                   <p>Lorem ipsum dolor sit amet consectetur.</p>
                   <small>R$ 20,00</small>
@@ -163,15 +163,15 @@
 
         <form>
           <label for="nome">Nome</label>
-          <input type="text" name="nome" id="nome" placeholder="Digite seu Nome">
+          <input type="text" name="nome" id="nome" placeholder="Digite seu Nome" required>
 
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Digite seu email">
+          <input type="email" name="email" id="email" placeholder="Digite seu email" required>
 
           <label for="mensagem">Mensagem</label>
-          <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite uma mensagem"></textarea>
+          <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite uma mensagem" required></textarea>
 
-          <button type="button" id="submitForm">Enviar</button>
+          <button type="submit" id="submitForm">Enviar</button>
         </form>
       </section>
     </main>
