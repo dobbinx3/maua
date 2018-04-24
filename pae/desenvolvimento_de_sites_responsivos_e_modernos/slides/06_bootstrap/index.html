@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Aula 6 - Bootstrap</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    
+    <style>
+      .reveal pre {
+        box-shadow: none;
+      }
+    </style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<!-- Slide 1 -->
+				<section>
+          <img src="./maua_logo.png" alt="Mauá Logo" style="border: 0; box-shadow: none; margin-top: -200px; margin-bottom: 200px" width="200px">
+					<h3>Desenvolvimento de sites responsivos e modernos</h3>
+          <p>Bootstrap</p>
+        </section>
+        <!-- Slide 1 End -->
+
+        <!-- Slide 2 Start -->
+        <section>
+          <h5>Bootstrap</h5>
+          <p class="fragment fade-in">Biblioteca de componentes para front-end</p>
+        </section>
+        <!-- Slide 2 End -->
+
+        <!-- Slide 3 Start -->
+        <section>
+          <h5>Grid System</h5>
+          <img src="./img/grid.jpg">
+        </section>
+        <!-- Slide 3 End -->
+
+        <!-- Slide 4 Start -->
+        <section>
+          <h5>Importando o CSS</h5>
+          <pre class="fragment fade-up">
+            <code data-trim class="html">
+              &lt;head&gt;
+                <title>Exemplo de uma Vitrine</title>
+                <meta name="author" content="Dobbinx3">
+  
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                <link rel="stylesheet" type="text/css" href="style.css">
+              &lt;/head&gt;
+            </code>
+          </pre>
+        </section>
+        <!-- Slide 4 End -->
+
+        <!-- Slide 4 Start -->
+        <section>
+          <h5>Importando o Javascript</h5>
+          <pre class="fragment fade-up">
+            <code data-trim class="html">
+                ...
+
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+                <script src="script.js"></script>
+              &lt;/body&gt;
+            </code>
+          </pre>
+
+          <h6 class="fragment fade-up">E a ordem importa?</h6>
+          <h4 class="fragment fade-up">SIM!!!</h4>
+        </section>
+        <!-- Slide 4 End -->
+
+        <!-- Slide 9 Start -->
+        <section>
+          <h3>Exemplos</h3>
+        </section>
+        <!-- Slide 9 End -->
+
+        <!-- Slide 10 Start -->
+        <section>
+          <h3>Perguntas?</h3>
+        </section>
+        <!-- Slide 10 End -->
+
+        <!-- Slide 11 Start -->
+        <section>
+          <h3>Referências</h3>
+
+          <ul>
+            <li class="fragment fade-up">Bootstrap -> <a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a></li>
+            <li class="fragment fade-up">jQuery -> <a href="" target="_blank"></a></li>
+            <li class="fragment fade-up">Popper -> <a href="" target="_blank"></a></li>
+          </ul>
+        </section>
+        <!-- Slide 11 End -->
+
+        <!-- Slide 12 Start -->
+        <section>
+          <h3>Atividade</h3>
+          <p>- Aplicar dinamismo no projeto</p>
+        </section>
+        <!-- Slide 12 End -->
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
