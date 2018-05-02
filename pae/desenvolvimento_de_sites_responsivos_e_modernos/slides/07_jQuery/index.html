@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Aula 7 - jQuery</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <style>
+      .reveal pre {
+        box-shadow: none;
+      }
+    </style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<!-- Slide 1 -->
+				<section>
+          <img src="./maua_logo.png" alt="Mauá Logo" style="border: 0; box-shadow: none; margin-top: -200px; margin-bottom: 200px" width="200px">
+					<h3>Desenvolvimento de sites responsivos e modernos</h3>
+          <p>jQuery</p>
+        </section>
+        <!-- Slide 1 End -->
+
+        <!-- Slide 2 Start -->
+        <section>
+          <h5>jQuery</h5>
+          <p class="fragment fade-in">Biblioteca que facilita a escrita do Javascript</p>
+        </section>
+        <!-- Slide 2 End -->
+
+        <!-- Slide 3 Start -->
+        <section>
+          <h5>Símbolo para acessar a API</h5>
+
+          <p class="fragment fade-up">$</p>
+        </section>
+        <!-- Slide 3 End -->
+
+        <!-- Slide 4 Start -->
+        <section>
+          <h5>Document Ready</h5>
+
+          <pre class="fragment fade-up">
+            <code data-trim class="jquery">
+              $(document).ready(function() {
+                console.log('Document ready!');
+              });
+              
+              // Atalho
+              $(function() {
+                console.log('Document ready!');
+              });
+            </code>
+          </pre>
+        </section>
+        <!-- Slide 4 End -->
+
+         <!-- Slide 4 Start -->
+         <section>
+          <h5>Como selecionar meus elementos?</h5>
+
+          <pre class="fragment fade-up">
+            <code data-trim class="jquery">
+              $('#azul').css('color', 'blue');
+
+              $('.picture').on('click', functions () {
+                alert('clicou');
+              });
+
+              $('ul li a').addClass('link');
+            </code>
+          </pre>
+        </section>
+        <!-- Slide 4 End -->
+
+        <!-- Slide 5 Start -->
+        <section>
+          <h5>Eventos</h5>
+
+          <pre class="fragment fade-up">
+            <code data-trim class="jquery">
+              $('input').blur(function () {
+                alert('sai do input');
+              });
+
+              $('ul li a').on('click', function () {
+                alert('Um link foi clicado');
+              });
+
+              $('ul li a').on('dblclick', function () {
+                alert('Um link foi clicado duas vezes consecutivas');
+              });
+
+              $(document).scroll(function() {
+                console.log('Scrolling');
+              });
+            </code>
+          </pre>
+        </section>
+        <!-- Slide 5 End -->
+
+         <!-- Slide 6 Start -->
+         <section>
+          <h5>Plugins</h5>
+
+          <ul>
+            <li class="fragment fade-in">
+              <a href="https://www.jqueryscript.net/menu/jQuery-Plugin-Fixed-Bootstrap-4-Nav-Smooth-Scroll-navbar-fixed-js.html" target="_blank">
+                NavBar Fixed
+              </a>
+            </li>
+            <li class="fragment fade-in">
+              <a href="https://ilkeryilmaz.github.io/timelinejs/" target="_blank">
+                Timeline
+              </a>
+            </li>
+            <li class="fragment fade-in">
+              <a href="http://www.thepetedesign.com/demos/tiltedpage_scroll_demo.html" target="_blank">
+                PageScroll
+              </a>
+            </li>
+            <li class="fragment fade-in">
+              <a href="http://facedetection.jaysalvat.com/" target="_blank">
+                Face Detection
+              </a>
+            </li>
+            <li class="fragment fade-in">
+              <a href="http://anthonyterrien.com/knob/" target="_blank">
+                Dials
+              </a>
+            </li>
+            <li class="fragment fade-in">...</li>
+          </ul>
+        </section>
+        <!-- Slide 6 End -->
+
+        <!-- Slide 8 Start -->
+        <section>
+          <h5>Manipular o Bootstrap</h5>
+        </section>
+        <!-- Slide 8 End -->
+
+        <!-- Slide 9 Start -->
+        <section>
+          <h5>Considerações Finais</h5>
+        </section>
+        <!-- Slide 9 End -->
+
+        <!-- Slide 10 Start -->
+        <section>
+          <h3>Exemplos</h3>
+        </section>
+        <!-- Slide 10 End -->
+
+        <!-- Slide 11 Start -->
+        <section>
+          <h3>Perguntas?</h3>
+        </section>
+        <!-- Slide 11 End -->
+
+        <!-- Slide 12 Start -->
+        <section>
+          <h3>Referências</h3>
+
+          <ul>
+            <li class="fragment fade-up">jQuery -> <a href="https://jquery.com/" target="_blank">https://jquery.com/</a></li>
+          </ul>
+        </section>
+        <!-- Slide 12 End -->
+
+        <!-- Slide 13 Start -->
+        <section>
+          <h3>Atividade</h3>
+          <p>- Alterar o que havia de Javascript por jQuery no Projeto</p>
+        </section>
+        <!-- Slide 13 End -->
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
