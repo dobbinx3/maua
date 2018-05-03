@@ -157,12 +157,39 @@
         <!-- Slide 8 Start -->
         <section>
           <h5>Manipular o Bootstrap</h5>
+
+          <pre class="fragment fade-up">
+            <code data-trim class="jquery">
+              // Métodos
+              $('.fechaAlerta').on('click', function () {
+                $('#alert').alert('close');
+              });
+
+              // Eventos
+              $('#alert').on('closed.bs.alert', function () {
+                alert('Meu alerta vai ser fechado');
+              });
+            </code>
+          </pre>
         </section>
         <!-- Slide 8 End -->
 
         <!-- Slide 9 Start -->
         <section>
           <h5>Considerações Finais</h5>
+
+          <pre class="fragment fade-up">
+            <code data-trim class="jquery">
+              'use strict'
+            </code>
+          </pre>
+
+          <ul>
+            <small class="fragment fade-up">Forma para se escrever códigos mais "seguros"</small><br>
+            <small class="fragment fade-up">Transforma sintaxe ruim em Erro</small><br>
+            <small class="fragment fade-up">Em algumas Engines o mesmo código com strict mode é mais performático</small>
+            <small class="fragment fade-up">Obs.: Isso é utilizado no ECMAScript 5</small>
+          </ul>
         </section>
         <!-- Slide 9 End -->
 
