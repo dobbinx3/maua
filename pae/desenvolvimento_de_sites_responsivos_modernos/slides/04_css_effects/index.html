@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Aula 4 - Transitions & Animations</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    
+    <style>
+      .reveal pre {
+        box-shadow: none;
+      }
+    </style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<!-- Slide 1 -->
+				<section>
+          <img src="./maua_logo.png" alt="Mauá Logo" style="border: 0; box-shadow: none; margin-top: -200px; margin-bottom: 200px" width="200px">
+					<h3>Desenvolvimento de sites responsivos e modernos</h3>
+          <p>Transitions & Animations</p>
+        </section>
+        <!-- Slide 1 End -->
+
+        <!-- Slide 2 Start -->
+        <section>
+          <h5>Transitions</h5>
+          <p class="fragment fade-in">Transições de propriedades de maneira suave</p>
+        </section>
+        <!-- Slide 2 End -->
+
+        <!-- Slide 3 Start -->
+        <section>
+          <h5>Propriedades de Transição CSS</h5>
+          <small class="fragment fade-in"><strong>transition-property:</strong> qual propriedade CSS irá transicionar</small>
+          <small class="fragment fade-in"><strong>transition-duration:</strong> quanto tempo a transição irá durar</small>
+          <small class="fragment fade-in"><strong>transition-timing-function:</strong> qual a curva de velocidade da transição</small>
+          <small class="fragment fade-in"><strong>transition-delay:</strong> quanto tempo a transição irá esperar para começar</small>
+          <small class="fragment fade-in"><strong>transition:</strong> Atalho para utilizar as 4 propriedades em uma só</small>
+        </section>
+        <!-- Slide 3 End -->
+
+        <!-- Slide 4 Start -->
+        <section>
+          <h5>transition-timing-function</h5>
+          <small class="fragment fade-in"><strong>ease</strong> - efeito de transição com um início lento, depois rápido e termina lento</small>
+          <small class="fragment fade-in"><strong>linear</strong> - efeito de transição com a mesma velocidade do início ao fim</small>
+          <small class="fragment fade-in"><strong>ease-in</strong> - efeito de transição com um início lento</small>
+          <small class="fragment fade-in"><strong>ease-out</strong> - efeito de transição com um final lento</small>
+          <small class="fragment fade-in"><strong>ease-in-out</strong> - efeito de transição com início e fim lentos</small>
+        </section>
+        <!-- Slide 4 End -->
+
+        <!-- Slide 6 Start -->
+        <section>
+          <h3>Exemplos</h3>
+        </section>
+        <!-- Slide 6 End -->
+
+        <!-- Slide 7 Start -->
+        <section>
+          <h3>Perguntas?</h3>
+        </section>
+        <!-- Slide 7 End -->
+
+        <!-- Slide 8 Start -->
+        <section>
+          <h3>Referências</h3>
+
+          <ul>
+            <li class="fragment fade-up"> -> <a href="" target="_blank"></a></li>
+          </ul>
+        </section>
+        <!-- Slide 8 End -->
+
+        <!-- Slide 9 Start -->
+        <section>
+          <h3>Atividade</h3>
+          <p>- Implementar Animações no seu HTML</p>
+        </section>
+        <!-- Slide 9 End -->
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
+
+<!-- TODO -->
+
+<!-- 
+
+  * Prefixos dos Browsers Webkit, moz, ms, o
+  * Transform 2D
+  * Transform 3D
+  * Animations
+  * Keyframe rule
+  * Referências (Animate CSS...outros)
+  * Criar Exemplo
+
+ -->
