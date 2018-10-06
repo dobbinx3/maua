@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* HELPER CLASSES */
+
+.dib {
+  display: inline-block;
+}
+
+.bigger {
+  font-size: 40px;
+}
+
+/* HELPER CLASSES */
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  color: black;
+  display: inline-block;
+}
+
+header nav ul li a:hover {
+  color: blue;
+  transition: color 400ms;
+}
+
+header nav ul li a span {
+  width: 100%;
+  display: inline-block;
+  height: 1px;
+  background-color: black;
+  position: relative;
+  left: -100%;
+}
+
+header nav ul li a:hover span {
+  left: 0;
+  transition: left 600ms;
+}
+
+header nav ul li a:active {
+  color: red;
+}
+
+#artistas {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
