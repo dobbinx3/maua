@@ -1,0 +1,28 @@
+header {
+  height: 56px;
+}
+
+main {
+  padding-top: 56px;
+}
+
+#artistas img {
+  margin-top: -50px;
+}
+  
+#artistas .fab {
+  font-size: 25px; 
+}
+
+#artistas .card:hover {
+  background: #00bcd4;
+  color: #fff; 
+}
+
+#artistas .card:hover h5 {
+  color: #fff !important; 
+}
+
+#artistas .card:hover .fab {
+  color: #fff; 
+}
