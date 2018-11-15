@@ -1,0 +1,80 @@
+/* HEADER */
+
+header {
+  height: 56px;
+}
+
+.navbar {
+  border-bottom: #00bcd4 3px solid;
+  opacity: 0.8; 
+}
+
+/* MAIN */
+
+main section {
+  padding-top: 59px;
+}
+
+/* HOME */
+
+.carousel-item {
+  max-height: 600px; 
+}
+
+.carousel ol li {
+  cursor: pointer;
+}
+
+/* SOBRE NOS */
+
+#sobreNos .fa {
+  color: #fff;
+  background: #333;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 30px; 
+}
+
+/* ARTISTAS */
+
+#artistas img {
+  margin-top: -50px;
+}
+  
+#artistas .fab {
+  font-size: 25px; 
+}
+
+#artistas .card:hover {
+  background: #00bcd4;
+  color: #fff; 
+}
+
+#artistas .card:hover h5 {
+  color: #fff !important; 
+}
+
+#artistas .card:hover .fab {
+  color: #fff; 
+}
+
+/* PORTFOLIO */
+
+#grid li a {
+  cursor: auto;
+}
+
+#grid li img {
+  height: 380px;
+  min-width: 300px;
+}
+
+/* FOOTER */
+
+footer a {
+  margin-left: 10px;
+}
+
+footer .fab {
+  font-size: 20px;
+}
