@@ -12,4 +12,4 @@ Os exemplos da PAE.
 
 ## Demo
 
-O resultado final pode ser visto funcionando [Aqui](http://dobbinx3.com/maua/pae/desenvolvimento_de_sites_responsivos_modernos/agenciax3).
+O resultado final pode ser visto funcionando [Aqui](http://www.dobbinx3.com/maua/pae/desenvolvimento_de_sites_responsivos_modernos/agenciax3).
