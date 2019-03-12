@@ -9,6 +9,19 @@ $(document).ready(function () {
   $('#grid li a').on('click', function(e) {
     e.preventDefault();
   });
+  
+  // Parametrizando queryString
+  function getUrlVars(variavel){
+    var vars = [], hash;
+    var hashes = variavel.slice(variavel.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}
 
   // Formulario
   $(function () {
@@ -35,22 +48,31 @@ $(document).ready(function () {
         // });
 
         // Lambda Version
-        var url = "https://lx4vlicjkb.execute-api.sa-east-1.amazonaws.com/prod/send_email";
+        var url = "https://lx4vlicjkb.execute-api.sa-east-1.amazonaws.com/prod/send-email";
+
+        var obj = {
+          name: $('#contact-form input[name="name"]').val(),
+          email: $('#contact-form input[name="email"]').val(),
+          message: $('#contact-form textarea[name="message"]').val(),
+          'g-recaptcha-response': getUrlVars($('#contact-form').serialize())['g-recaptcha-response']
+        }
 
         $.ajax({
           type: "POST",
           url: url,
-          data: $('#contact-form').serialize(),
+          data: JSON.stringify(obj),
           success: function (data)
           {
-              var alertBox = '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + data.message + '</div>';
-              $('#contatoModal').find('.messages').html(alertBox);
-              $('#contact-form')[0].reset();
+            data = JSON.parse(data);
+            var alertBox = '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + data.message + '</div>';
+            $('#contatoModal').find('.messages').html(alertBox);
+            $('#contact-form')[0].reset();
           },
           error: function (err)
           {
-              var alertBox = '<div class="alert alert-danger alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + err.responseJSON.message + '</div>';
-              $('#contatoModal').find('.messages').html(alertBox);
+            const errorMessage = JSON.parse(err.responseJSON.errorMessage);
+            var alertBox = '<div class="alert alert-danger alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + errorMessage.message + '</div>';
+            $('#contatoModal').find('.messages').html(alertBox);
           }
         });
     });
