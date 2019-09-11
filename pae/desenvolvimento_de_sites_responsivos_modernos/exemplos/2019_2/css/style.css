@@ -1,0 +1,95 @@
+/* CSS da noss página de teste */
+
+h1 {
+  color: red;
+}
+
+header h1 {
+  font-size: 12px;
+}
+
+header > h1 {
+  font-size: 60px;
+}
+
+header nav ul li {
+  color: green;
+  font-size: 40px;
+}
+
+header nav ul li:first-of-type {
+  font-weight: bold;
+}
+
+header nav ul li:last-of-type {
+  list-style-type: upper-roman;
+}
+
+header nav ul li a + span {
+  text-transform: uppercase;
+}
+
+.titulo {
+  font-size: 24px;
+  border: 1px solid red;
+}
+
+body h3.inline {
+  display: inline-block;
+}
+
+#identificador {
+  color: purple;
+}
+
+h3[data-cor] {
+  color: pink;
+}
+
+h3[data-cor="verde"] {
+  color: green;
+}
+
+body > h3.funciona[data-cor="vermelho"] {
+  color: red;
+}
+
+a[title="Rodrigo"] {
+  font-size: 30px;
+}
+
+a[title="Rodrigo"]:hover {
+  color: red;
+}
+
+#rosa {
+  color: pink;
+}
+
+body div ul li div h6 {
+  color: red;
+}
+
+.absolute {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+body .flex {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+}
