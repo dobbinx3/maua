@@ -1,0 +1,14 @@
+ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.triangle {
+  margin-right: 10px;
+  height: 0px;
+  width: 0px;
+  border-top: 4px solid transparent;
+  border-left: 8px solid black;
+  border-bottom: 4px solid transparent;
+}

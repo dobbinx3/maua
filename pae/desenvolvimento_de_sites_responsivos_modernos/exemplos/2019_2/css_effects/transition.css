@@ -1,0 +1,30 @@
+h1 {
+  color: blue;
+}
+
+h1:hover {
+  color: red;
+}
+
+h1.transition:hover {
+  /* transition-delay: 0ms;
+  transition-duration: 1000ms;
+  transition-property: color;
+  transition-timing-function: linear; */
+  transition: color 1000ms linear 0ms;
+  color: red;
+}
+
+.bloco {
+  width: 100px;
+  height: 200px;
+  background: black;
+}
+
+.bloco:hover {
+  transition: width 2000ms linear;
+  /* transition: width 2000ms ease-in; */
+  /* transition: width 2000ms ease-out; */
+  /* transition: width 2000ms ease-in-out; */
+  width: 500px;
+}

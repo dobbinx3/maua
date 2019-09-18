@@ -1,0 +1,32 @@
+@keyframes corMaua {
+  0% {
+    background: red;
+    width: 100px;
+    height: 100px;
+  }
+  30% {
+    background: yellow;
+    width: 200px;
+    height: 100px;
+  }
+  60% {
+    background: blue;
+    width: 300px;
+    height: 200px;
+  }
+  100% {
+    background: green;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.animado {
+  width: 100px;
+  height: 100px;
+  background: red;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-name: corMaua;
+}
