@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./animationTop.css" />
+    <link rel="stylesheet" href="./ponte.css" />
+  </head>
+  <body>
+    <button id="addPerson">Adicionar uma pessoa</button>
+
+    <div class="flex">
+      <div class="person">
+        <img
+          src="./imagens/person.gif"
+          alt="Pessoa caminhando"
+          class="animated"
+        />
+      </div>
+      <div class="ponte"></div>
+    </div>
+
+    <script>
+      // Click no botão
+      document
+        .getElementById("addPerson")
+        .addEventListener("click", function() {
+          const container = document.querySelector(".flex");
+
+          const person = document.createElement("div");
+          person.classList.add("person");
+
+          const img = document.createElement("img");
+          img.classList.add("animated");
+          img.setAttribute("src", "./imagens/person.gif");
+          img.setAttribute("alt", "Pessoa caminhando");
+
+          img.addEventListener("click", function() {
+            this.parentElement.style.animationPlayState = "paused";
+            this.classList.add("hinge");
+          });
+
+          person.appendChild(img);
+          container.prepend(person);
+        });
+
+      // Click no elemento
+      document
+        .querySelector(".person img")
+        .addEventListener("click", function() {
+          this.parentElement.style.animationPlayState = "paused";
+          this.classList.add("hinge");
+        });
+
+      // Esse script pode ser melhorado de maneira simples, como podemos melhorar esse código?
+    </script>
+  </body>
+</html>
