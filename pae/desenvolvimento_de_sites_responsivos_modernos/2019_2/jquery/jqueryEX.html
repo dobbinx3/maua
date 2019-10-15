@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./animationTop.css" />
+    <link rel="stylesheet" href="./ponte.css" />
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ducimus beatae eveniet ut! Magni distinctio ullam cupiditate aut? Eum, architecto id? Aspernatur omnis laboriosam exercitationem ullam blanditiis illum corporis cumque.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ducimus beatae eveniet ut! Magni distinctio ullam cupiditate aut? Eum, architecto id? Aspernatur omnis laboriosam exercitationem ullam blanditiis illum corporis cumque.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ducimus beatae eveniet ut! Magni distinctio ullam cupiditate aut? Eum, architecto id? Aspernatur omnis laboriosam exercitationem ullam blanditiis illum corporis cumque.</p>
+
+    <input type="text" placeholder="blur">
+
+    <div class="flex">
+      <div class="person">
+        <img
+          src="./imagens/person.gif"
+          alt="Pessoa caminhando"
+          class="animated"
+        />
+      </div>
+      <div class="ponte"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="./jquery.js"></script> -->
+    <script>
+      $(document).ready(function () {
+        $('.person img').click(function() {
+          $(this).parent().css('animationPlayState', 'paused');
+          $(this).addClass("hinge");
+        });
+      });
+    </script>
+  </body>
+</html>
