@@ -12,7 +12,3 @@ Os exemplos da PAE.
 ## Desafio
 
 1. [Má prática em código javascript - Ponte que cai](https://github.com/dobbinx3/maua/tree/master/pae/desenvolvimento_de_sites_responsivos_modernos/2019_2/ponte)
-
-## Demo
-
-<!-- O resultado final pode ser visto funcionando [Aqui](http://www.dobbinx3.com/maua/pae/desenvolvimento_de_sites_responsivos_modernos/agenciax3). -->
