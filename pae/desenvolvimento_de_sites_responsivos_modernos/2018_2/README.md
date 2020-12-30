@@ -9,7 +9,3 @@ Os exemplos da PAE.
 5. [jQuery](https://github.com/dobbinx3/maua/tree/master/pae/desenvolvimento_de_sites_responsivos_modernos/2018_2/jquery)
 6. [Bootstrap (parte 1)](https://github.com/dobbinx3/maua/tree/master/pae/desenvolvimento_de_sites_responsivos_modernos/2018_2/bootstrap_parte_1)
 7. [Bootstrap (parte 2)](https://github.com/dobbinx3/maua/tree/master/pae/desenvolvimento_de_sites_responsivos_modernos/2018_2/bootstrap_parte_2)
-
-## Demo
-
-O resultado final pode ser visto funcionando [Aqui](http://www.dobbinx3.com/maua/pae/desenvolvimento_de_sites_responsivos_modernos/agenciax3).
